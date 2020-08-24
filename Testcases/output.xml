@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.7.4 on win32)" generated="20200821 14:15:12.320" rpa="false">
+<suite id="s1" name="TC02 BUILTIN MODULE" source="C:\Users\harshmis\PycharmProjects\Automation_Robot_Framework\Testcases\TC02_BUILTIN_MODULE.robot">
+<test id="s1-t1" name="CATENATE keyword in built in module">
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>Hello</arg>
+<arg>world</arg>
+</arguments>
+<assign>
+<var>${str1}</var>
+</assign>
+<msg timestamp="20200821 14:15:12.417" level="INFO">${str1} = Hello world</msg>
+<status status="PASS" starttime="20200821 14:15:12.417" endtime="20200821 14:15:12.417"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${str1}</arg>
+</arguments>
+<assign>
+<var>${str2}</var>
+</assign>
+<msg timestamp="20200821 14:15:12.418" level="INFO">Hello world</msg>
+<msg timestamp="20200821 14:15:12.418" level="INFO">${str2} = None</msg>
+<status status="PASS" starttime="20200821 14:15:12.417" endtime="20200821 14:15:12.418"></status>
+</kw>
+<kw name="Comment" library="BuiltIn">
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<arguments>
+<arg>This is a comment to check the COMMENT Keyword of builtin module</arg>
+</arguments>
+<status status="PASS" starttime="20200821 14:15:12.418" endtime="20200821 14:15:12.418"></status>
+</kw>
+<status status="PASS" starttime="20200821 14:15:12.416" endtime="20200821 14:15:12.418" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200821 14:15:12.328" endtime="20200821 14:15:12.419"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="TC02 BUILTIN MODULE">TC02 BUILTIN MODULE</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
